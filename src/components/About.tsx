@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import { Skull, TrendingDown, TrendingUp, Volume2, VolumeX } from "lucide-react";
+import { BitcoinField } from "./BitcoinField";
 
 const PAIR_CHAIN = [
   "STRATEGY BUYS BITCOIN — LIKE, A LOT OF IT",
@@ -17,6 +18,7 @@ export const About = () => {
       id="about"
       className="relative scroll-mt-[120px] overflow-hidden border-b-4 border-black bg-[#FA660F] px-4 py-24 text-black md:px-8 md:py-36"
     >
+      <BitcoinField count={6} tone="dark" seed={2} />
       {/* Scrolling background words */}
       <div className="pointer-events-none absolute inset-0 z-0 flex flex-col justify-between overflow-hidden py-14 opacity-[0.09]">
         <motion.div

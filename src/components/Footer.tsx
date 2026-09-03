@@ -1,10 +1,12 @@
 import { motion } from "motion/react";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
 import { LAUNCH_URL } from "../constants";
+import { BitcoinField } from "./BitcoinField";
 import { LongIcon } from "./LongIcon";
 
 export const Footer = () => (
   <footer className="relative overflow-hidden border-t-8 border-[#FA660F] bg-black px-4 py-16 text-center md:px-8">
+    <BitcoinField count={3} tone="orange" seed={4} />
     <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-10">
       <TrendingUp size={420} className="text-[#FA660F]" />
     </div>

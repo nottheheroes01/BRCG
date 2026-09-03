@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { LAUNCH_URL } from "../constants";
+import { BitcoinField } from "./BitcoinField";
 import { LongIcon } from "./LongIcon";
 
 const STEPS = ["OPEN LONG.XYZ", "CONNECT ROBINHOOD WALLET", "SWAP FOR $BRCG"];
@@ -9,6 +10,7 @@ export const LaunchBar = () => (
     id="buy"
     className="relative z-10 scroll-mt-[120px] border-y-4 border-black bg-[#FA660F] text-black"
   >
+    <BitcoinField count={3} tone="dark" seed={5} />
     <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-8 md:px-8 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
       <div>
         <p className="font-mono text-[11px] font-bold uppercase tracking-[0.25em] opacity-70 md:text-xs">

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowUpRight, Check, Copy, TrendingDown, TrendingUp } from "lucide-react";
 import { LAUNCH_URL } from "../constants";
+import { BitcoinField } from "./BitcoinField";
 import { LongIcon } from "./LongIcon";
 
 const FEED = [
@@ -108,6 +109,7 @@ const ContractBox = () => {
 
 export const Hero = () => (
   <section id="top" className="relative overflow-hidden bg-black pt-8 md:pt-12">
+    <BitcoinField count={5} tone="orange" seed={1} />
     {/* Background layers */}
     <div aria-hidden className="bg-grid absolute inset-0 z-0" />
     <div

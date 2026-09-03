@@ -9,6 +9,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import { LAUNCH_URL } from "../constants";
+import { BitcoinField } from "./BitcoinField";
 import { LongIcon } from "./LongIcon";
 
 const TILES = [
@@ -69,6 +70,7 @@ export const Tokenomics = () => {
       id="tokenomics"
       className="relative scroll-mt-[120px] overflow-hidden bg-black px-4 py-24 text-[#FA660F] md:px-8 md:py-36"
     >
+      <BitcoinField count={6} tone="lime" seed={3} />
       {/* Giant BITCOIN (MSTR) watermark */}
       <div className="pointer-events-none absolute inset-0 z-0 flex flex-col items-center justify-center gap-2 leading-none">
         <span className="text-outline-acid select-none font-display text-[4.5rem] uppercase opacity-[0.13] md:text-[13rem]">

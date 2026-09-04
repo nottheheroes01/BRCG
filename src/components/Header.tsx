@@ -2,8 +2,8 @@ import { motion } from "motion/react";
 import { BarChart2, Send } from "lucide-react";
 
 // TODO: ganti placeholder "#" dengan link komunitas asli
-const TELEGRAM_URL = "#";
-const X_URL = "#";
+const TELEGRAM_URL = "https://t.me/BRCG_RBH";
+const X_URL = "https://x.com/brcg_rbh?s=11";
 const DEXSCREENER_URL = "#";
 
 const TICKER_ITEMS = [

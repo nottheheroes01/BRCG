@@ -19,13 +19,13 @@ export const Footer = () => (
       >
         We ride
         <br />
-        BITCOIN (MSTR)
+        BITCOIN
         <br />
         forever
       </motion.div>
 
       <div className="flex flex-col items-center justify-center gap-3 border-4 border-black bg-white px-6 py-4 font-mono text-sm font-bold uppercase tracking-widest text-black shadow-[8px_8px_0_0_rgba(250,102,15,1)] md:flex-row md:gap-6 md:text-base">
-        <span>$BRCG × BITCOIN (MSTR)</span>
+        <span>$BRCG × BITCOIN</span>
         <span aria-hidden className="hidden md:inline">
           🎢
         </span>
@@ -44,10 +44,10 @@ export const Footer = () => (
       </a>
 
       <p className="max-w-2xl font-mono text-xs uppercase leading-relaxed tracking-widest text-white/40">
-        Disclaimer: $BRCG is a meme token built to ride BITCOIN (MSTR) —
-        Strategy&apos;s Bitcoin stock — on the Robinhood network, launched fair
-        on the long.xyz launchpad. No presale, no promises, no seatbelts.
-        Charts go up, charts go down, we keep riding. Not financial advice.
+        Disclaimer: $BRCG is a meme token built to ride BITCOIN on the
+        Robinhood network, launched fair on the long.xyz launchpad. No presale,
+        no promises, no seatbelts. Charts go up, charts go down, we keep
+        riding. Not financial advice.
       </p>
     </div>
   </footer>

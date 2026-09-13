@@ -4,9 +4,9 @@ import { Skull, TrendingDown, TrendingUp, Volume2, VolumeX } from "lucide-react"
 import { BitcoinField } from "./BitcoinField";
 
 const PAIR_CHAIN = [
-  "STRATEGY BUYS BITCOIN — LIKE, A LOT OF IT",
-  "BITCOIN (MSTR) = THE WILDEST BTC TICKER ON ROBINHOOD",
-  "$BRCG RIDES EVERY BITCOIN (MSTR) LOOP",
+  "BITCOIN IS THE ONLY RIDE THAT MATTERS",
+  "24/7 VOLATILITY ON THE ROBINHOOD NETWORK",
+  "$BRCG RIDES EVERY BITCOIN LOOP",
   "RED DAY? LAUGH. GREEN DAY? PARTY. EITHER WAY: WHEEE",
 ];
 
@@ -76,16 +76,14 @@ export const About = () => {
           >
             <p className="font-display text-2xl uppercase leading-tight md:text-3xl">
               <span className="text-red-600">
-                The first BITCOIN (MSTR)-paired meme coin.
+                The first Bitcoin-paired meme coin.
               </span>
             </p>
             <p className="mt-4 border-l-8 border-black pl-4 text-base font-medium leading-relaxed md:text-lg">
               Every crypto bro knows the legend: the guy who laughs while the
-              chart bleeds. Now he has a ride.{" "}
-              <strong>Strategy</strong> — the company behind{" "}
-              <strong>BITCOIN (MSTR)</strong> — owns the biggest Bitcoin bag on
-              the planet, and $BRCG is strapped into that exact seat, looping
-              every BITCOIN (MSTR) candle on the Robinhood network.
+              chart bleeds. Now he has a ride. <strong>Bitcoin</strong> is the
+              wildest coaster in finance — and $BRCG is strapped into that
+              exact seat, looping every candle on the Robinhood network.
             </p>
           </motion.div>
 
@@ -148,7 +146,7 @@ export const About = () => {
             className="group relative z-10 -skew-y-2 border-8 border-black bg-white p-4 shadow-[16px_16px_0_0_rgba(0,0,0,1)]"
           >
             <div className="absolute -top-6 -right-4 z-20 rotate-[12deg] cursor-pointer border-4 border-black bg-[#CCFF00] px-3 py-2 font-display text-lg uppercase text-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] transition-transform group-hover:rotate-[18deg] group-hover:scale-110 md:-right-6 md:px-4 md:text-xl">
-              Bitcoin (MSTR) season 🚨
+              Bitcoin season 🚨
             </div>
 
             <div className="relative mx-auto w-full max-w-md">

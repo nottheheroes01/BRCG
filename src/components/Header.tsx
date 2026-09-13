@@ -7,12 +7,12 @@ const X_URL = "https://x.com/brcg_rbh?s=11";
 const DEXSCREENER_URL = "#";
 
 const TICKER_ITEMS = [
-  "BITCOIN (MSTR) PUMP? BRCG PUMP",
-  "$BRCG × BITCOIN (MSTR) — ON ROBINHOOD",
+  "BITCOIN PUMP? BRCG PUMP",
+  "$BRCG × BITCOIN — ON ROBINHOOD",
   "BUY ON LONG.XYZ",
   "RED DAY = SALE DAY",
   "WHEEEEEEEEEEE 🎢",
-  "STRATEGY-APPROVED",
+  "BITCOIN-APPROVED",
   "DIAMOND HANDS ONLY",
 ];
 
@@ -58,7 +58,7 @@ export const Header = () => (
           $BRCG
         </span>
         <span className="hidden rounded-full border border-[#FA660F] px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-[#FA660F] xl:inline-block">
-          BITCOIN (MSTR)
+          BITCOIN-PAIRED
         </span>
       </a>
 

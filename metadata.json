@@ -1,6 +1,6 @@
 {
-  "name": "BRCG — Ride the Bitcoin (MSTR) Coaster",
-  "description": "$BRCG — the meme coin paired with BITCOIN (MSTR), Strategy's Bitcoin stock, on the Robinhood Network. Fair launch on long.xyz.",
+  "name": "BRCG — Ride the Bitcoin Coaster",
+  "description": "$BRCG — the meme coin paired with BITCOIN on the Robinhood Network. Fair launch on long.xyz.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

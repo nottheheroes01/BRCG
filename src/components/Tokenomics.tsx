@@ -33,15 +33,15 @@ const TILES = [
     icon: TrendingUp,
     label: "Network",
     value: "Robinhood",
-    sub: "BITCOIN (MSTR), BTC & $BRCG — 24/7.",
+    sub: "BTC & $BRCG — 24/7.",
     valueClass: "text-4xl md:text-5xl",
     tone: "text-white",
   },
   {
     icon: Link2,
     label: "Paired asset",
-    value: "BITCOIN (MSTR)",
-    sub: "Strategy — the biggest BTC stock.",
+    value: "BITCOIN",
+    sub: "The original rollercoaster.",
     valueClass: "text-2xl md:text-3xl",
     tone: "text-[#CCFF00]",
   },
@@ -71,13 +71,10 @@ export const Tokenomics = () => {
       className="relative scroll-mt-[120px] overflow-hidden bg-black px-4 py-24 text-[#FA660F] md:px-8 md:py-36"
     >
       <BitcoinField count={6} tone="lime" seed={3} />
-      {/* Giant BITCOIN (MSTR) watermark */}
-      <div className="pointer-events-none absolute inset-0 z-0 flex flex-col items-center justify-center gap-2 leading-none">
+      {/* Giant BITCOIN watermark */}
+      <div className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center leading-none">
         <span className="text-outline-acid select-none font-display text-[4.5rem] uppercase opacity-[0.13] md:text-[13rem]">
           BITCOIN
-        </span>
-        <span className="text-outline-acid select-none font-display text-[2rem] uppercase tracking-[0.3em] opacity-[0.13] md:text-[5rem]">
-          (MSTR)
         </span>
       </div>
 

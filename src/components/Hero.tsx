@@ -7,7 +7,7 @@ import { LongIcon } from "./LongIcon";
 
 const FEED = [
   { label: "$BRCG", value: "+∞%", up: true },
-  { label: "BITCOIN (MSTR)", value: "+312.4%", up: true },
+  { label: "BITCOIN", value: "+312.4%", up: true },
   { label: "BTC", value: "+69.4%", up: true },
   { label: "BOREDOM", value: "-100%", up: false },
 ];
@@ -24,7 +24,7 @@ const TerminalCard = ({ className = "" }: { className?: string }) => (
 
     <div className="overflow-hidden border-2 border-[#FA660F] bg-[#101010] shadow-[12px_12px_0_0_rgba(250,102,15,1)]">
       <div className="flex items-center justify-between gap-2 border-b-2 border-[#FA660F] bg-[#FA660F] px-3 py-2 font-mono text-[9px] font-bold uppercase tracking-widest text-black sm:text-[11px]">
-        <span className="truncate">$BRCG × BITCOIN (MSTR) · RBH NETWORK</span>
+        <span className="truncate">$BRCG × BITCOIN · RBH NETWORK</span>
         <span className="flex shrink-0 items-center gap-1.5">
           <span className="h-2 w-2 animate-pulse rounded-full bg-black" />
           LIVE
@@ -33,7 +33,7 @@ const TerminalCard = ({ className = "" }: { className?: string }) => (
 
       <img
         src="/brcghero.gif"
-        alt="Roller coaster guy riding Bitcoin (MSTR)"
+        alt="Roller coaster guy riding Bitcoin"
         className="block h-auto w-full border-b-2 border-[#FA660F] object-cover"
       />
 
@@ -123,9 +123,6 @@ export const Hero = () => (
       className="text-outline-acid pointer-events-none absolute right-0 top-20 z-0 hidden select-none flex-col items-end gap-2 pr-2 font-display uppercase leading-none md:flex"
     >
       <span className="text-[5.5rem] opacity-40 lg:text-[8rem]">BITCOIN</span>
-      <span className="text-[1.6rem] tracking-[0.3em] opacity-40 lg:text-[2.6rem]">
-        (MSTR)
-      </span>
     </motion.span>
 
     <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 px-4 pb-14 pt-8 md:px-8 md:pb-24 md:pt-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
@@ -137,7 +134,7 @@ export const Hero = () => (
             transition={{ repeat: Infinity, duration: 3 }}
             className="-rotate-2 border-2 border-black bg-[#FA660F] px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-widest text-black shadow-[3px_3px_0_0_rgba(255,255,255,1)]"
           >
-            Paired with BITCOIN (MSTR)
+            Paired with BITCOIN
           </motion.span>
           <span className="border border-[#CCFF00] px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-widest text-[#CCFF00]">
             Live on Robinhood network
@@ -151,10 +148,6 @@ export const Hero = () => (
             Bitcoin
           </span>
           <br />
-          <span className="block text-[0.26em] leading-[2.4] tracking-[0.4em] text-[#CCFF00]">
-            (MSTR)
-          </span>
-          <br />
           <span className="text-outline-white">Coaster</span>
         </h1>
 
@@ -165,10 +158,9 @@ export const Hero = () => (
 
         <p className="mt-8 max-w-xl border-l-4 border-[#FA660F] bg-white/5 p-4 text-sm font-medium leading-relaxed text-white/85 backdrop-blur-sm md:text-lg">
           The only meme coin hard-paired to{" "}
-          <strong className="text-[#FA660F]">BITCOIN (MSTR)</strong> —
-          Strategy&apos;s Bitcoin stock — trading 24/7 on the Robinhood
-          network. Green day or red day, we ride it like a rollercoaster…
-          because it is one.
+          <strong className="text-[#FA660F]">BITCOIN</strong> — the wildest
+          ride in crypto — trading 24/7 on the Robinhood network. Green day or
+          red day, we ride it like a rollercoaster… because it is one.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-5">
@@ -197,7 +189,7 @@ export const Hero = () => (
         </p>
       </div>
 
-      {/* Right: BITCOIN (MSTR) "terminal" card (desktop only) */}
+      {/* Right: Bitcoin "terminal" card (desktop only) */}
       <div className="hidden lg:block">
         <TerminalCard />
       </div>

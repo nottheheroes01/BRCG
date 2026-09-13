@@ -22,4 +22,6 @@
 @media(max-width:700px) and (max-height:780px){.ride-copy{top:97px;max-height:290px}.ride-copy h1,.ride-copy-stage-0 h1,.ride-copy-stage-4 h1{font-size:32px}.ride-copy .ride-description{font-size:9px;margin:9px 0}.ride-eyebrow{margin-bottom:10px}.ride-chapter-id{margin-bottom:6px}.ride-contract{margin-top:9px}.ride-contract code{padding:7px 9px}.ride-world{top:302px}.ride-playback{bottom:170px}.ride-copy-stage-4 .ride-launch{margin-top:8px;padding-top:6px}}
 .ride-x-button{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--ink);border-radius:5px;padding:15px 20px;font-size:13px;font-weight:700;background:transparent;box-shadow:3px 3px 0 #25292022;transition:background .2s,transform .2s,box-shadow .2s}
 .ride-x-button:hover{background:var(--lime);transform:translate(2px,2px);box-shadow:1px 1px 0 #25292022}
+.ride-ca{background:none;border:0;color:inherit;font:inherit;text-transform:uppercase;letter-spacing:.4px;display:inline-flex;gap:5px;align-items:center;cursor:pointer}
+.ride-ca:hover{color:var(--ink)}
 @media(max-width:700px){.ride-copy-stage-4 .ride-x-button{padding:9px 12px;font-size:10px;gap:6px}}

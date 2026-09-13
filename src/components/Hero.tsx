@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { ArrowUpRight, Check, Copy, TrendingDown, TrendingUp } from "lucide-react";
 import { LAUNCH_URL } from "../constants";
 import { BitcoinField } from "./BitcoinField";
-import { LongIcon } from "./LongIcon";
+import { PonsIcon } from "./PonsIcon";
 
 const FEED = [
   { label: "$BRCG", value: "+∞%", up: true },
@@ -63,7 +63,7 @@ const TerminalCard = ({ className = "" }: { className?: string }) => (
       </div>
 
       <div className="flex items-center justify-between border-t-2 border-[#FA660F] bg-[#FA660F] px-3 py-2 font-mono text-[10px] font-bold uppercase tracking-widest text-black sm:text-[11px]">
-        <span>Next stop: long.xyz launchpad</span>
+        <span>Next stop: pons launchpad</span>
         <span aria-hidden>🎢</span>
       </div>
     </div>
@@ -170,8 +170,8 @@ export const Hero = () => (
             rel="noopener noreferrer"
             className="group flex items-center gap-3 border-4 border-white bg-[#CCFF00] px-6 py-4 font-display text-lg uppercase tracking-wide text-black shadow-[6px_6px_0_0_rgba(255,255,255,1)] transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[10px_10px_0_0_rgba(255,255,255,1)] md:text-xl"
           >
-            <LongIcon invert className="h-6 w-6" />
-            Buy $BRCG on long.xyz
+            <PonsIcon invert className="h-6 w-6" />
+            Buy $BRCG on pons
             <ArrowUpRight className="h-5 w-5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
           </a>
           <a
@@ -185,7 +185,7 @@ export const Hero = () => (
         <ContractBox />
 
         <p className="mt-6 font-mono text-[11px] uppercase tracking-[0.25em] text-white/40">
-          No presale · no whitelist · fair launch via long.xyz
+          No presale · no whitelist · fair launch via pons
         </p>
       </div>
 

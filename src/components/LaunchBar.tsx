@@ -1,9 +1,9 @@
 import { ArrowUpRight } from "lucide-react";
 import { LAUNCH_URL } from "../constants";
 import { BitcoinField } from "./BitcoinField";
-import { LongIcon } from "./LongIcon";
+import { PonsIcon } from "./PonsIcon";
 
-const STEPS = ["OPEN LONG.XYZ", "CONNECT ROBINHOOD WALLET", "SWAP FOR $BRCG"];
+const STEPS = ["OPEN PONS", "CONNECT ROBINHOOD WALLET", "SWAP FOR $BRCG"];
 
 export const LaunchBar = () => (
   <section
@@ -40,7 +40,7 @@ export const LaunchBar = () => (
         rel="noopener noreferrer"
         className="group flex shrink-0 items-center gap-3 self-start border-4 border-black bg-[#CCFF00] px-6 py-4 font-display text-base uppercase tracking-wide text-black shadow-[6px_6px_0_0_rgba(255,255,255,1)] transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[10px_10px_0_0_rgba(255,255,255,1)] md:text-lg lg:self-center"
       >
-        <LongIcon invert className="h-6 w-6" />
+        <PonsIcon invert className="h-6 w-6" />
         Open launchpad
         <ArrowUpRight className="h-5 w-5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
       </a>

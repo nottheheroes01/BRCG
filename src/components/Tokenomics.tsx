@@ -10,13 +10,13 @@ import {
 } from "lucide-react";
 import { LAUNCH_URL } from "../constants";
 import { BitcoinField } from "./BitcoinField";
-import { LongIcon } from "./LongIcon";
+import { PonsIcon } from "./PonsIcon";
 
 const TILES = [
   {
     icon: Flame,
     label: "Total supply",
-    value: "420,690,000,000",
+    value: "1,000,000,000",
     sub: "Enough chaos for everyone.",
     valueClass: "text-2xl md:text-3xl break-words",
     tone: "text-white",
@@ -24,8 +24,8 @@ const TILES = [
   {
     icon: BadgeDollarSign,
     label: "Tax",
-    value: "0%",
-    sub: "No buy/sell BS. Ever.",
+    value: "2%",
+    sub: "A tiny 2% on buys & sells.",
     valueClass: "text-5xl md:text-6xl",
     tone: "text-[#FA660F]",
   },
@@ -56,7 +56,7 @@ const TILES = [
   {
     icon: Rocket,
     label: "Launch",
-    value: "long.xyz",
+    value: "pons",
     sub: "Fair launch. No presale.",
     valueClass: "text-3xl md:text-4xl",
     tone: "text-white",
@@ -146,7 +146,7 @@ export const Tokenomics = () => {
               <p
                 className={`mt-2 flex flex-wrap items-center gap-2 font-display uppercase leading-none tracking-tight ${t.valueClass} ${t.tone}`}
               >
-                {t.launch && <LongIcon className="h-7 w-7" />}
+                {t.launch && <PonsIcon className="h-7 w-7" />}
                 {t.value}
               </p>
               <p className="mt-3 font-mono text-[11px] uppercase tracking-wider text-white/40">
@@ -162,10 +162,10 @@ export const Tokenomics = () => {
           className="mt-16 flex flex-col items-center justify-between gap-6 border-4 border-black bg-[#FA660F] p-6 text-black shadow-[10px_10px_0_0_rgba(255,255,255,1)] md:mt-20 md:rotate-[0.5deg] md:flex-row md:p-10"
         >
           <div className="flex items-center gap-4">
-            <LongIcon invert className="h-12 w-12 shrink-0 md:h-14 md:w-14" />
+            <PonsIcon invert className="h-12 w-12 shrink-0 md:h-14 md:w-14" />
             <div>
               <h3 className="font-display text-3xl uppercase leading-none tracking-tight md:text-5xl">
-                Launched on long.xyz
+                Launched on pons
               </h3>
               <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.2em] opacity-70 md:text-xs">
                 Fair launch · no presale · no whitelist · no team bags
@@ -178,7 +178,7 @@ export const Tokenomics = () => {
             rel="noopener noreferrer"
             className="group flex shrink-0 items-center gap-3 border-4 border-black bg-[#CCFF00] px-6 py-4 font-display text-base uppercase tracking-wide text-black transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 md:text-lg"
           >
-            <LongIcon invert className="h-6 w-6" />
+            <PonsIcon invert className="h-6 w-6" />
             Go to launchpad
             <ArrowUpRight className="h-5 w-5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
           </a>

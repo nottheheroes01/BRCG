@@ -1,3 +1,3 @@
 // Central place for external links.
-// TODO: ganti dengan URL pool $BRCG di long.xyz begitu launchpad live (mis. https://long.xyz/token/0x...)
-export const LAUNCH_URL = "https://long.xyz";
+// TODO: swap for the $BRCG pool link on pons once the pair is live (e.g. https://www.ponsfamily.com/launchpad/<pool>)
+export const LAUNCH_URL = "https://www.ponsfamily.com/launchpad";

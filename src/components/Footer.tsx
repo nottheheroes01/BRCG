@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
 import { LAUNCH_URL } from "../constants";
 import { BitcoinField } from "./BitcoinField";
-import { LongIcon } from "./LongIcon";
+import { PonsIcon } from "./PonsIcon";
 
 export const Footer = () => (
   <footer className="relative overflow-hidden border-t-8 border-[#FA660F] bg-black px-4 py-16 text-center md:px-8">
@@ -38,14 +38,14 @@ export const Footer = () => (
         rel="noopener noreferrer"
         className="group inline-flex items-center gap-3 border-2 border-black bg-[#CCFF00] px-5 py-3 font-display uppercase text-black transition-colors hover:bg-[#DFFF3F]"
       >
-        <LongIcon invert className="h-5 w-5" />
-        Launched on long.xyz
+        <PonsIcon invert className="h-5 w-5" />
+        Launched on pons
         <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
       </a>
 
       <p className="max-w-2xl font-mono text-xs uppercase leading-relaxed tracking-widest text-white/40">
         Disclaimer: $BRCG is a meme token built to ride BITCOIN on the
-        Robinhood network, launched fair on the long.xyz launchpad. No presale,
+        Robinhood network, launched fair on the pons launchpad. No presale,
         no promises, no seatbelts. Charts go up, charts go down, we keep
         riding. Not financial advice.
       </p>

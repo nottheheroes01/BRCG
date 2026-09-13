@@ -1,6 +1,6 @@
 {
   "name": "BRCG — Ride the Bitcoin Coaster",
-  "description": "$BRCG — the meme coin paired with BITCOIN on the Robinhood Network. Fair launch on long.xyz.",
+  "description": "$BRCG — the meme coin paired with BITCOIN on the Robinhood Network. Fair launch on pons.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

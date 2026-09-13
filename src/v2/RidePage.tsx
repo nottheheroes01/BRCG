@@ -9,9 +9,10 @@ const CONTRACT_ADDRESS = 'will be launched soon';
 const TELEGRAM_URL = 'https://t.me/BRCG_RBH';
 const X_URL = 'https://x.com/brcg_rbh?s=11';
 const XIcon = () => <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M18.9 2h3.3l-7.2 8.3L23.5 22h-6.7l-5.2-6.9L5.6 22H2.3l7.8-8.9L1.5 2h6.9l4.7 6.2L18.9 2Zm-1.2 18h1.8L7.4 3.9H5.5L17.7 20Z"/></svg>;
-// Plain SVG asterisk instead of the "✳" glyph: mobile browsers render that glyph as
-// a coloured emoji, which looked wrong next to the headline.
-const Spark = () => <svg viewBox="0 0 24 24" width=".84em" height=".84em" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" aria-hidden="true" style={{display:'block'}}><path d="M12 2.6v18.8M2.6 12h18.8M5.35 5.35l13.3 13.3M18.65 5.35L5.35 18.65"/></svg>;
+// Bitcoin mark for the headline accent, drawn as SVG (not the "₿" glyph) so it
+// renders identically everywhere, inherits the orange through currentColor, and
+// can never be swapped for an emoji font by mobile browsers.
+const BitcoinMark = () => <svg viewBox="0 0 24 24" width=".8em" height=".8em" fill="none" stroke="currentColor" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{display:'block'}}><path d="M6.6 4.4v15.2M6.6 4.4h5.6a3.8 3.8 0 0 1 0 7.6H6.6M6.6 12h7.3a3.8 3.8 0 0 1 0 7.6H6.6M10.6 1.8v2.6M13.6 1.8v2.6M10.6 19.6v2.6M13.6 19.6v2.6"/></svg>;
 const SocialLinks = () => <div className="ride-social-links"><a href={TELEGRAM_URL} target="_blank" rel="noreferrer" aria-label="Telegram"><Send size={17}/></a><a href={X_URL} target="_blank" rel="noreferrer" aria-label="X (Twitter)"><XIcon/></a></div>;
 const stops = ['The ride', 'The lore', 'The ups & downs', 'Tokenomics', 'Get on board'];
 const stopLabels = ['ALL ABOARD', 'THE FIRST CLIMB', 'HOLD ON TIGHT', 'KNOW YOUR RIDE', 'NEXT STOP: YOU'];
@@ -101,7 +102,7 @@ export default function RidePage() {
         <div key={stage} className="ride-chapter">
           <p className="ride-chapter-id">0{stage+1} / {stopLabels[stage]}</p>
           {stage===0&&<>
-            <h1>Life’s a ride.<br/>Make it <em>wild.</em><span className="ride-spark" aria-hidden="true"><Spark/></span></h1>
+            <h1>Life’s a ride.<br/>Make it <em>wild.</em><span className="ride-spark" aria-hidden="true"><BitcoinMark/></span></h1>
             <p className="ride-description">One Bitcoin. Infinite ups and downs.<br/>Meet $BRCG — the guy who never stops riding.</p>
             <div className="ride-actions"><button className="ride-primary" onClick={start}>Let’s ride <ArrowRight size={20}/></button><button className="ride-text-button" onClick={()=>go(1)}>Discover the story <ArrowDown size={15}/></button></div>
             <div className="ride-contract"><span>CONTRACT ADDRESS</span><div><code>{CONTRACT_ADDRESS}</code><button onClick={copyContract} aria-label="Copy contract address">{copyStatus==='Copied'?<Check size={14}/>:<Copy size={14}/>} {copyStatus==='Copied'?'Copied':'Copy'}</button></div><small role="status">{copyStatus}</small></div>

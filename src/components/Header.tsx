@@ -74,6 +74,8 @@ export const Header = () => (
         </a>
       </div>
 
+      <a href="/" className="shrink-0 rounded border border-[#CCFF00] px-2 py-2 font-mono text-[10px] font-bold text-[#CCFF00] hover:bg-[#CCFF00] hover:text-black">3D RIDE ↗</a>
+
       {/* Socials — icon only */}
       <div className="flex shrink-0 items-center gap-2 sm:gap-3">
         <a

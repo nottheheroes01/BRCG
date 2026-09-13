@@ -113,22 +113,6 @@ export const About = () => {
               remixes later, he became Bitcoin&apos;s most legendary meme — and
               now he rides again as <strong>$BRCG</strong>.
             </p>
-
-            <ul className="mt-6 space-y-3 border-t-4 border-dashed border-black pt-5 font-mono text-[11px] font-bold uppercase leading-snug md:text-sm">
-              {LORE_TIMELINE.map(([year, text]) => (
-                <li
-                  key={year}
-                  className="flex flex-col gap-0.5 sm:flex-row sm:gap-3"
-                >
-                  <span className="shrink-0 text-red-600">{year}</span>
-                  <span>{text}</span>
-                </li>
-              ))}
-            </ul>
-
-            <p className="mt-5 font-mono text-[10px] uppercase tracking-widest text-black/50">
-              Source: bitcoincoaster.com — the creator&apos;s official site
-            </p>
           </motion.div>
 
           <motion.div
@@ -224,6 +208,30 @@ export const About = () => {
             >
               💎
             </motion.div>
+          </motion.div>
+
+          {/* Timeline lore — di bawah video */}
+          <motion.div
+            whileHover={{ rotate: 0 }}
+            className="relative z-0 mt-16 -rotate-1 border-4 border-white bg-[#0D0D0D] p-5 text-[#FA660F] shadow-[10px_10px_0_0_rgba(255,255,255,1)] transition-transform md:mt-20 md:p-6"
+          >
+            <p className="mb-4 font-mono text-xs uppercase tracking-[0.25em] text-white/50">
+              Bitcoin coaster timeline
+            </p>
+            <ul className="space-y-3 font-mono text-[11px] font-bold uppercase leading-snug md:text-sm">
+              {LORE_TIMELINE.map(([year, text]) => (
+                <li
+                  key={year}
+                  className="flex flex-col gap-0.5 sm:flex-row sm:gap-3"
+                >
+                  <span className="shrink-0 text-[#FA660F]">{year}</span>
+                  <span className="text-white">{text}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-5 font-mono text-[10px] uppercase tracking-widest text-white/40">
+              Source: bitcoincoaster.com — the creator&apos;s official site
+            </p>
           </motion.div>
         </div>
       </div>

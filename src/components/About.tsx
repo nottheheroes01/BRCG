@@ -10,6 +10,34 @@ const PAIR_CHAIN = [
   "RED DAY? LAUGH. GREEN DAY? PARTY. EITHER WAY: WHEEE",
 ];
 
+// Fakta dari bitcoincoaster.com (situs resmi sang kreator, Marcus Connor)
+const LORE_TIMELINE: [string, string][] = [
+  [
+    "Early 2013",
+    "Artist Marcus Connor draws the Bitcoin Roller Coaster Guy — a tiny animated gif about BTC's wild ride.",
+  ],
+  [
+    "April 2013",
+    "Posted on Reddit, Bitcointalk and BrainlessTales. Reddit downvotes him to zero.",
+  ],
+  [
+    "Nov 2013",
+    "BTC moons past $1,000, he pops up on Bitcoinity — and the internet never lets go.",
+  ],
+  [
+    "2014 → 2015",
+    "BTC bleeds 80%. Fans remix the guy to match every crash. A meme mascot is born.",
+  ],
+  [
+    "Jan 6, 2017",
+    "r/Bitcoin front page goes full roller coaster. The guy is officially legendary.",
+  ],
+  [
+    "Now",
+    "$BRCG revives him on the Robinhood network — fair launch on long.xyz. Hodl on and enjoy the ride.",
+  ],
+];
+
 export const About = () => {
   const [isMuted, setIsMuted] = useState(true);
 
@@ -61,11 +89,11 @@ export const About = () => {
             transition={{ repeat: Infinity, duration: 3 }}
             className="inline-block -rotate-3 border-4 border-black bg-black px-4 py-2 font-display text-xl uppercase text-[#FA660F] shadow-[4px_4px_0_0_rgba(0,0,0,1)] md:text-2xl"
           >
-            What&apos;s a pair??
+            OG since 2013
           </motion.div>
 
           <h2 className="font-display text-6xl uppercase leading-[0.9] tracking-tighter text-black drop-shadow-[5px_5px_0_rgba(255,255,255,1)] md:text-8xl">
-            Pair
+            The
             <br />
             lore
           </h2>
@@ -75,15 +103,31 @@ export const About = () => {
             className="rotate-1 border-4 border-black bg-white p-6 shadow-[10px_10px_0_0_rgba(0,0,0,1)] transition-transform"
           >
             <p className="font-display text-2xl uppercase leading-tight md:text-3xl">
-              <span className="text-red-600">
-                The first Bitcoin-paired meme coin.
-              </span>
+              <span className="text-red-600">The first Bitcoin meme. Ever.</span>
             </p>
             <p className="mt-4 border-l-8 border-black pl-4 text-base font-medium leading-relaxed md:text-lg">
-              Every crypto bro knows the legend: the guy who laughs while the
-              chart bleeds. Now he has a ride. <strong>Bitcoin</strong> is the
-              wildest coaster in finance — and $BRCG is strapped into that
-              exact seat, looping every candle on the Robinhood network.
+              Every crypto bro knows the guy who laughs while the chart bleeds.
+              In <strong>early 2013</strong>, artist <strong>Marcus Connor</strong>{" "}
+              posted him as a tiny animated gif about Bitcoin&apos;s wild ride.
+              Reddit downvoted it to zero. A decade of pumps, crashes and
+              remixes later, he became Bitcoin&apos;s most legendary meme — and
+              now he rides again as <strong>$BRCG</strong>.
+            </p>
+
+            <ul className="mt-6 space-y-3 border-t-4 border-dashed border-black pt-5 font-mono text-[11px] font-bold uppercase leading-snug md:text-sm">
+              {LORE_TIMELINE.map(([year, text]) => (
+                <li
+                  key={year}
+                  className="flex flex-col gap-0.5 sm:flex-row sm:gap-3"
+                >
+                  <span className="shrink-0 text-red-600">{year}</span>
+                  <span>{text}</span>
+                </li>
+              ))}
+            </ul>
+
+            <p className="mt-5 font-mono text-[10px] uppercase tracking-widest text-black/50">
+              Source: bitcoincoaster.com — the creator&apos;s official site
             </p>
           </motion.div>
 

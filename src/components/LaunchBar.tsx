@@ -14,7 +14,7 @@ export const LaunchBar = () => (
     <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-8 md:px-8 lg:flex-row lg:items-center lg:justify-between lg:gap-10">
       <div>
         <p className="font-mono text-[11px] font-bold uppercase tracking-[0.25em] opacity-70 md:text-xs">
-          No contract address · no presale · no bs
+          Contract live · no presale · no bs
         </p>
         <h2 className="mt-2 font-display text-3xl uppercase leading-none tracking-tight md:text-5xl">
           How to buy $BRCG

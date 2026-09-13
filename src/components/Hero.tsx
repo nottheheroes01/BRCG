@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowUpRight, Check, Copy, TrendingDown, TrendingUp } from "lucide-react";
-import { LAUNCH_URL } from "../constants";
+import { CONTRACT_ADDRESS, LAUNCH_URL } from "../constants";
 import { BitcoinField } from "./BitcoinField";
 import { PonsIcon } from "./PonsIcon";
 
@@ -70,14 +70,12 @@ const TerminalCard = ({ className = "" }: { className?: string }) => (
   </motion.div>
 );
 
-const CONTRACT_PLACEHOLDER = "WILL BE LAUNCHED SOON";
-
 const ContractBox = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(CONTRACT_PLACEHOLDER);
+      await navigator.clipboard.writeText(CONTRACT_ADDRESS);
     } catch {
       /* clipboard unavailable */
     }
@@ -91,8 +89,8 @@ const ContractBox = () => {
         $BRCG contract:
       </span>
       <div className="flex flex-1 items-stretch overflow-hidden border-2 border-dashed border-[#FA660F] bg-[#101010]">
-        <span className="flex-1 truncate px-3 py-2 font-mono text-xs font-bold tracking-widest text-[#FA660F] sm:text-sm">
-          {CONTRACT_PLACEHOLDER}
+        <span className="flex-1 break-all px-3 py-2 font-mono text-xs font-bold tracking-tight text-[#FA660F] sm:text-sm">
+          {CONTRACT_ADDRESS}
         </span>
         <button
           onClick={handleCopy}

@@ -1,11 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowDown, ArrowDownRight, ArrowRight, ArrowUpRight, Play, Pause, RotateCcw, MoveDown, Sparkles, Send, Copy, Check, X } from 'lucide-react';
-import { LAUNCH_URL } from '../constants';
+import { ArrowDown, ArrowDownRight, ArrowRight, ArrowUpRight, BarChart2, Play, Pause, RotateCcw, MoveDown, Sparkles, Send, Copy, Check, X } from 'lucide-react';
+import { CONTRACT_ADDRESS, DEXSCREENER_URL, LAUNCH_URL } from '../constants';
 import { CoasterScene } from './CoasterScene';
 import './ride.css';
 
-// Update this one value when the contract launches.
-const CONTRACT_ADDRESS = 'will be launched soon';
 const TELEGRAM_URL = 'https://t.me/BRCG_RBH';
 const X_URL = 'https://x.com/brcg_rbh?s=11';
 const XIcon = () => <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M18.9 2h3.3l-7.2 8.3L23.5 22h-6.7l-5.2-6.9L5.6 22H2.3l7.8-8.9L1.5 2h6.9l4.7 6.2L18.9 2Zm-1.2 18h1.8L7.4 3.9H5.5L17.7 20Z"/></svg>;
@@ -13,7 +11,7 @@ const XIcon = () => <svg viewBox="0 0 24 24" width="16" height="16" fill="curren
 // renders identically everywhere, inherits the orange through currentColor, and
 // can never be swapped for an emoji font by mobile browsers.
 const BitcoinMark = () => <svg viewBox="0 0 24 24" width=".8em" height=".8em" fill="none" stroke="currentColor" strokeWidth={1.9} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{display:'block'}}><path d="M6.6 4.4v15.2M6.6 4.4h5.6a3.8 3.8 0 0 1 0 7.6H6.6M6.6 12h7.3a3.8 3.8 0 0 1 0 7.6H6.6M10.6 1.8v2.6M13.6 1.8v2.6M10.6 19.6v2.6M13.6 19.6v2.6"/></svg>;
-const SocialLinks = () => <div className="ride-social-links"><a href={TELEGRAM_URL} target="_blank" rel="noreferrer" aria-label="Telegram"><Send size={17}/></a><a href={X_URL} target="_blank" rel="noreferrer" aria-label="X (Twitter)"><XIcon/></a></div>;
+const SocialLinks = () => <div className="ride-social-links"><a href={TELEGRAM_URL} target="_blank" rel="noreferrer" aria-label="Telegram"><Send size={17}/></a><a href={X_URL} target="_blank" rel="noreferrer" aria-label="X (Twitter)"><XIcon/></a><a href={DEXSCREENER_URL} target="_blank" rel="noreferrer" aria-label="Dexscreener chart" title="$BRCG chart on Dexscreener"><BarChart2 size={18}/></a></div>;
 const stops = ['The ride', 'The lore', 'The ups & downs', 'Tokenomics', 'Get on board'];
 const stopLabels = ['ALL ABOARD', 'THE FIRST CLIMB', 'HOLD ON TIGHT', 'KNOW YOUR RIDE', 'NEXT STOP: YOU'];
 // One lap is 5.4 screens of scroll; the rest of the scroll space is a "seam" that
@@ -110,7 +108,7 @@ export default function RidePage() {
           {stage===1&&<><h1>One small GIF.<br/>One giant <em>ride.</em></h1><p className="ride-description">In 2013, Marcus Connor drew a Bitcoin on a roller coaster. The internet took it for a ride. Through every peak and every dip, the guy kept smiling.</p><div className="ride-lore-card"><img src="/brcgstocklogo2.jpg" alt="The Bitcoin coaster guy artwork"/><div><span>EST. 2013</span><strong>The chart changes.<br/>The spirit doesn’t.</strong><a href="https://bitcoincoaster.com" target="_blank" rel="noreferrer">Meet the original <ArrowUpRight size={13}/></a><button className="ride-watch" onClick={()=>setVideoOpen(true)}><Play size={13}/> Watch the coaster</button></div></div></>}
           {stage===2&&<><h1>Up. Down.<br/>Still <em>wheeee!</em></h1><p className="ride-description">Bitcoin is the original roller coaster. $BRCG brings that energy to the Robinhood network. A community for everyone who enjoys the ride.</p><div className="ride-manifesto"><div><span><ArrowUpRight size={26} strokeWidth={2.4}/></span><p>GREEN DAY<strong>Hands up.</strong></p></div><div><span><ArrowDownRight size={26} strokeWidth={2.4}/></span><p>RED DAY<strong>Hands still up.</strong></p></div></div><span className="ride-small-note">NO PRICE PREDICTIONS. JUST ROLLER COASTER ENERGY.</span></>}
           {stage===3&&<><h1>Big thrills.<br/><em>Simple numbers.</em></h1><div className="ride-stats"><div><span>TOTAL SUPPLY</span><strong>1<span>B</span></strong></div><div><span>BUY / SELL TAX</span><strong>2<span>%</span></strong></div><div><span>PAIRED ASSET</span><b>Bitcoin<ArrowUpRight size={14} strokeWidth={2.6} style={{display:'inline-block',verticalAlign:'-1px',marginLeft:4}}/></b></div><div><span>NETWORK</span><b>Robinhood</b></div></div><p className="ride-small-note">PROJECT TOKENOMICS · FAIR LAUNCH VIA PONS</p></>}
-          {stage===4&&<><h1>Your seat.<br/><em>Your ride.</em></h1><p className="ride-description">The best part of the roller coaster?<br/>The people screaming next to you.</p><div className="ride-actions"><a className="ride-primary" href={TELEGRAM_URL} target="_blank" rel="noreferrer"><Send size={17}/> Join the community</a><a className="ride-x-button" href={X_URL} target="_blank" rel="noreferrer"><XIcon/> Follow on X</a></div><div className="ride-launch"><span>THE NEXT ADVENTURE</span><a href={LAUNCH_URL} target="_blank" rel="noreferrer">Explore pons <ArrowUpRight size={17}/></a><p>Contract address: coming soon.</p></div><p className="ride-disclaimer">$BRCG is a meme token. No promises of returns. Not financial advice.</p></>}
+          {stage===4&&<><h1>Your seat.<br/><em>Your ride.</em></h1><p className="ride-description">The best part of the roller coaster?<br/>The people screaming next to you.</p><div className="ride-actions"><a className="ride-primary" href={TELEGRAM_URL} target="_blank" rel="noreferrer"><Send size={17}/> Join the community</a><a className="ride-x-button" href={X_URL} target="_blank" rel="noreferrer"><XIcon/> Follow on X</a></div><div className="ride-launch"><span>THE NEXT ADVENTURE</span><a href={LAUNCH_URL} target="_blank" rel="noreferrer">Trade on pons <ArrowUpRight size={17}/></a><a href={DEXSCREENER_URL} target="_blank" rel="noreferrer">View chart <BarChart2 size={17}/></a><p>Contract <button className="ride-ca" onClick={copyContract} title="Copy contract address" aria-label="Copy contract address">{CONTRACT_ADDRESS}{copyStatus==='Copied'?<Check size={12}/>:<Copy size={12}/>}</button></p></div><p className="ride-disclaimer">$BRCG is a meme token. No promises of returns. Not financial advice.</p></>}
         </div>
       </main>
       <div className="ride-stamp"><span>₿</span><p>POWERED BY<br/><strong>THE UPS & DOWNS</strong></p><Sparkles size={18}/></div>
